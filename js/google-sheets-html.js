@@ -13,9 +13,9 @@ google.load('visualization', '1', {
     packages: ['table']
 });
 var visualization;
-
+// -- https://docs.google.com/spreadsheets/d/1PjOnri9MOocxgX2QHKQ2eTyjG3tN4M2LmF7mojgIPk8/edit?usp=sharing
 function drawVisualization() {
-    var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1yYPu19q3f7tsOYnOtL_Wq2lgQpW9wFNtJytaU-L9FMk&output=html&gid=1604724666&usp=sharing');
+    var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1PjOnri9MOocxgX2QHKQ2eTyjG3tN4M2LmF7mojgIPk8&usp=sharing');
     query.setQuery('SELECT A, B, C, D, E, F, G, H, I, J, K, L WHERE A IS NOT NULL');
     query.send(handleQueryResponse);
 }
